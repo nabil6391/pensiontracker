@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+
+        tools:context=".home.MainActivity">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/colorPrimary">
+
+            <ImageView
+                android:id="@+id/btnBack"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_gravity="left|center_vertical"
+                android:layout_margin="12dp"
+                android:src="@drawable/ic_arrow_back_black_24dp"
+                android:tint="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tvTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textColor="@android:color/white"
+                android:textSize="18sp" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvPolicyName"
+            style="@style/titleEditext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="12dp"
+            android:text="Policy Name (optional)" />
+
+        <EditText
+            android:id="@+id/etPolicyName"
+            style="@style/editextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvCompany"
+                style="@style/titleEditext"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Company" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:gravity="right"
+                android:text="*"
+                android:textColor="@android:color/holo_red_light" />
+
+
+        </FrameLayout>
+
+
+        <EditText
+            android:id="@+id/etCompany"
+            style="@style/editextRounded"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvPolicyNumber"
+                style="@style/titleEditext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Policy Number" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:gravity="right"
+                android:text="*"
+                android:textColor="@android:color/holo_red_light" />
+
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/etPolicyNumber"
+            style="@style/editextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvPolicyStarted"
+                style="@style/titleEditext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Policy Started" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:gravity="right"
+                android:text="*"
+                android:textColor="@android:color/holo_red_light" />
+
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/etPolicyStarted"
+            style="@style/editextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvAmount"
+                style="@style/titleEditext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Amount" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:gravity="right"
+                android:text="*"
+                android:textColor="@android:color/holo_red_light" />
+
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/etAmount"
+            style="@style/editextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="numberDecimal" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/tvCompanyofEmployment"
+                style="@style/titleEditext"
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+                android:text="Company of Employment" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right|center"
+                android:gravity="right"
+                android:text="*"
+                android:textColor="@android:color/holo_red_light" />
+
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/etCompanyofEmployment"
+            style="@style/editextRounded"
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <TextView
+            android:id="@+id/tvOtherDetails"
+            style="@style/titleEditext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text"
+            android:text="Other Details" />
+
+        <EditText
+            android:id="@+id/etOtherDetails"
+            style="@style/editextRounded"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="text" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnSave"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="-6dp"
+            android:background="@color/colorPrimary"
+            android:gravity="center"
+            android:minHeight="0dp"
+            android:shadowRadius="0.0"
+            android:stateListAnimator="@null"
+            android:text="Edit Done"
+            android:textAllCaps="true"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            app:backgroundTint="@color/colorPrimary"
+            app:cornerRadius="0dp"
+            app:iconGravity="textStart" />
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="60dp"
+    tools:context=".ui.login.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/llUpper"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary"
+            android:orientation="vertical"
+            android:paddingTop="12dp"
+            android:paddingBottom="48dp"
+            app:layout_constraintBottom_toTopOf="@+id/llLower"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <TextView
+                android:id="@+id/tvSignInTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:paddingTop="12dp"
+                android:paddingBottom="24dp"
+                android:text="Profile"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <FrameLayout
+                android:layout_width="92dp"
+                android:layout_height="92dp"
+                android:layout_gravity="center">
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/ivIcon"
+                    android:layout_width="92dp"
+                    android:layout_height="92dp"
+                    android:src="@drawable/ic_profile"
+                    app:riv_border_color="#FFF"
+                    app:riv_border_width="2dip"
+                    app:riv_oval="true" />
+
+                <com.makeramen.roundedimageview.RoundedImageView
+                    android:id="@+id/btnUploadImage"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_gravity="right|bottom"
+                    android:background="@android:color/white"
+                    android:padding="2dp"
+                    android:src="@drawable/ic_add_a_photo_black_24dp"
+                    app:riv_border_color="#FFF"
+                    app:riv_border_width="2dp"
+                    app:riv_mutate_background="true"
+                    app:riv_oval="true" />
+
+            </FrameLayout>
+
+            <TextView
+                android:id="@+id/tvName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="12dp"
+                android:text="Jeffery Wong"
+                android:textColor="@android:color/white"
+                android:textSize="24sp" />
+
+
+        </LinearLayout>
+
+        <ScrollView
+            android:id="@+id/llLower"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:orientation="vertical"
+                android:padding="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/llUpper">
+
+
+                <TextView
+                    android:id="@+id/btnAddPension"
+                    style="@style/btnPension"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_add_black_24dp"
+                    android:text="Add a pension" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#F7F7F7" />
+
+
+                <TextView
+                    android:id="@+id/btnEditPension"
+                    style="@style/btnPension"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_edit_black_24dp"
+                    android:text="Edit a pension" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+                    android:background="#F7F7F7" />
+
+                <TextView
+                    android:id="@+id/btnDeletePension"
+                    style="@style/btnPension"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_delete_black_24dp"
+                    android:text="Delete a pension" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+
+                    android:background="#F7F7F7" />
+
+                <TextView
+                    android:id="@+id/btnAllPension"
+                    style="@style/btnPension"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_report"
+                    android:text="View all pension" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+
+                    android:background="#F7F7F7" />
+
+                <TextView
+                    android:id="@+id/btnEditMyDetails"
+                    style="@style/btnPension"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_edit_person"
+                    android:text="Edit my details" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+
+                    android:background="#F7F7F7" />
+
+                <TextView
+                    android:id="@+id/btnLogout"
+                    style="@style/btnPension"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_logout"
+                    android:text="Logout" />
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="2dp"
+
+                    android:background="#F7F7F7" />
+
+                <TextView
+                    android:id="@+id/btnPrivacyPolicy"
+                    style="@style/btnPension"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_privacy"
+                    android:text="Privacy Policy" />
+
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/cvInput"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp"
+        app:layout_anchor="@id/llUpper"
+        app:layout_anchorGravity="bottom|center">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Balance" />
+
+            <TextView
+                android:id="@+id/tvBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:text="-----"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
